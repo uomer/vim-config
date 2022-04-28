@@ -21,7 +21,7 @@ set mouse=a
 
 " Map: {{{
 let mapleader = " "
-inoremap jk <ESC>
+inoremap <c-q> <ESC>
 
 nnoremap <leader>wo <C-w>o
 nnoremap <leader>wh <C-w>h
