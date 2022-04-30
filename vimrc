@@ -52,6 +52,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', {'do': './install --all'}
   Plug 'junegunn/fzf.vim'
   Plug 'w0rp/ale'
+  Plug 'jiangmiao/auto-pairs'
 call plug#end()
 " }}}
 
