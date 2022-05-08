@@ -21,7 +21,7 @@ set mouse=a
 
 " Map: {{{
 let mapleader = " "
-inoremap <c-q> <ESC>
+inoremap jk <ESC>
 
 nnoremap <leader>wo <C-w>o
 nnoremap <leader>wh <C-w>h
@@ -52,7 +52,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', {'do': './install --all'}
   Plug 'junegunn/fzf.vim'
   Plug 'w0rp/ale'
-  Plug 'jiangmiao/auto-pairs'
 call plug#end()
 " }}}
 
