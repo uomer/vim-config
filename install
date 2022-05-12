@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ ! -d "~/.local/share/fonts/" ]; then
+  mkdir ~/.local/share/fonts
+fi
+
+cp -a fonts/* ~/.local/share/fonts/

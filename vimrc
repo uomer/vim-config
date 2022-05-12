@@ -44,25 +44,26 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 " Plug: {{{
 call plug#begin('~/.vim/plugged')
-  Plug 'morhetz/gruvbox'
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'majutsushi/tagbar'
-  Plug 'godlygeek/tabular'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'preservim/nerdtree'
-  Plug 'Xuyuanp/nerdtree-git-plugin'
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'https://gitee.com/uomer/vim-plug'
+  Plug 'https://gitee.com/uomer/gruvbox'
+  Plug 'https://gitee.com/uomer/vim-airline'
+  Plug 'https://gitee.com/uomer/vim-airline-themes'
+  Plug 'https://gitee.com/uomer/tagbar'
+  Plug 'https://gitee.com/uomer/tabular'
+  Plug 'https://gitee.com/uomer/coc.nvim', {'branch': 'release'}
+  Plug 'https://gitee.com/uomer/nerdtree'
+  Plug 'https://gitee.com/uomer/nerdtree-git-plugin'
+  Plug 'https://gitee.com/uomer/vim-go', { 'do': ':GoUpdateBinaries' }
 "  Plug 'dgryski/vim-godef'
-  Plug 'blackrush/vim-gocode'
-  Plug 'mattn/vim-goimports'
-  Plug 'jstemmer/gotags'
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  Plug 'https://gitee.com/uomer/vim-gocode'
+  Plug 'https://gitee.com/uomer/vim-goimports'
+  Plug 'https://gitee.com/uomer/gotags'
+  Plug 'https://gitee.com/uomer/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
-  Plug 'junegunn/fzf', {'do': './install --all'}
-  Plug 'junegunn/fzf.vim'
-  Plug 'w0rp/ale'
-  Plug 'ryanoasis/vim-devicons'
+  Plug 'https://gitee.com/uomer/fzf', {'do': './install --all'}
+  Plug 'https://gitee.com/uomer/fzf.vim'
+  Plug 'https://gitee.com/uomer/ale'
+  Plug 'https://gitee.com/uomer/vim-devicons'
 call plug#end()
 " }}}
 
