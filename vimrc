@@ -15,6 +15,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8,gbk,ucs-2le,ucs-2be,utf-16
 set scrolloff=3
 set laststatus=2
+set backspace=2
 set updatetime=100
 set mouse=a
 " }}}
@@ -115,7 +116,7 @@ let g:tagbar_sort  = 0 "关闭排序
 let g:tagbar_width = 30 "宽度
 " }}}
 
-" Go 相关
+" Go 相关 {{{
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds'     : [
