@@ -1,4 +1,5 @@
 " Base: {{{
+set nocompatible
 set number
 set relativenumber
 set autoindent
@@ -18,6 +19,13 @@ set laststatus=2
 set backspace=2
 set updatetime=100
 set mouse=a
+if has('gui_running')
+  if has('win16') || has('win32') || has('win95') || has('win64') 
+    set guifont=Consolas:h11,Courier_New:h11:cANSI
+  else
+    set guifont=DejaVuSansMono\ Nerd\ Font\ Mono\ 16
+  endif 
+endif
 " }}}
 
 " Map: {{{
@@ -108,7 +116,6 @@ let g:airline_powerline_fonts                   = 1
 " let g:airline_inactive_collapse=1
 " let g:airline_inactive_alt_sep=1
 " }}}
-"
 
 " Tagbar {{{
 let g:tagbar_sort  = 0 "关闭排序
@@ -144,15 +151,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin' : 'gotags',
     \ 'ctagsargs' : '-sort -silent',
 \ }
-
-" autocmd FileType go nnoremap <buffer> gd :call GodefUnderCursor() <cr>
-" autocmd FileType go nnoremap <buffer> <c-]> :call GodefUnderCursor() <cr>
-" let g:godef_split=3 "追踪打开新tab
-" let g:gogef_same_file_in_same_window=1 "函数在同一个文件中时不需要打开新窗口
-" 
-" "保存自动goimports
-" let g:go_fmt_command = "goimports"
-" let g:goimports = 1
 
 " }}}
 
